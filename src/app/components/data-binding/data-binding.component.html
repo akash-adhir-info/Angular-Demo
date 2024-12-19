@@ -1,0 +1,91 @@
+<div class="row">
+    <div class="col-12 p-3 bg-warning text-center">
+        <h3>Data Binding</h3>
+    </div>
+    
+</div>
+<div class="row">
+    <div class="col-6 p-3 bg-success text-center">
+        <h3>One Way</h3>
+    </div>
+    <div class="col-6 p-3 bg-primary text-center">
+        <h3>Two Way</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6   text-center">
+        <div class="row">
+            <div class="col-6 p-3 bg-secondary">
+                <h4>From .ts to .html</h4>
+            </div>
+            <div class="col-6 p-3 bg-warning ">
+                <h4>From .html to .ts</h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-6  bg-primary text-center">
+       <div class="row">
+        <div class="col-12 p-3 bg-danger">
+            <h4>Using ngModel</h4>
+        </div>
+       </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6  text-center">
+        <div class="row">
+            <div class="col-6 ">
+                <div class="row">
+                    <div class="col-6 p-3 bg-success">
+                        Interpolation
+                    </div>
+                    <div class="col-6 p-3 bg-primary">
+                        Property Binding
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 p-3 bg-secondary">  
+                Event Binding
+            </div>
+        </div>
+    </div>
+    <div class="col-6 p-3 bg-primary text-center">
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-2">
+        <p>{{courseName}}</p>
+        <div>{{courseDuration}}</div>
+    </div>
+    <div class="col-4">
+        <input type="text" [value]="courseName" placeholder="Name">
+    </div>
+    <div class="col-4">
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-2">
+        <button class="btn btn-primary" (click)="showMessage()">Show Message</button>
+    </div>
+    <div class="col-3">
+        <select (change)="onStateChange($event)">
+            <option value="">Select State</option>
+            <option value="GJ">Gujarat</option>
+            <option value="MH">Maharastra</option>
+            <option value="GA">Goa</option>    
+            <option value="JK">Jammu & Kasmir</option>
+        </select>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <input type="text" [value]="courseName" placeholder="Course Name">
+        <input type="text" [(ngModel)]="courseName" placeholder="Course Name">
+    </div>
+</div>
